@@ -8,8 +8,8 @@ html {
 
 body {
     margin: 0;
-    background: #0d1117;
-    color: #c9d1d9;
+    background: #ffffff;
+    color: #24292f;
     font-family:
         -apple-system,
         BlinkMacSystemFont,
@@ -18,7 +18,6 @@ body {
         Helvetica,
         Arial,
         sans-serif;
-
     line-height: 1.7;
 }
 
@@ -28,7 +27,9 @@ body {
 }
 
 
-/* HERO */
+/* =========================================
+   HEADER
+========================================= */
 
 .hero {
     text-align: center;
@@ -42,23 +43,29 @@ body {
 
 .hi {
     width: 30px;
+    height: auto;
     vertical-align: middle;
 }
 
 .hero h1 {
     margin: 20px 0 8px;
-    color: #f0f6fc;
+    color: #24292f;
     font-size: 2.2rem;
 }
 
 .subtitle {
     font-size: 1.05rem;
-    color: #8b949e;
+    color: #57606a;
 }
 
 .subtitle strong {
-    color: #f0f6fc;
+    color: #24292f;
 }
+
+
+/* =========================================
+   SOCIAL LINKS
+========================================= */
 
 .socials {
     display: flex;
@@ -70,16 +77,17 @@ body {
 
 .socials a {
     padding: 8px 18px;
-    border: 1px solid #30363d;
+    border: 1px solid #d0d7de;
     border-radius: 6px;
-    color: #58a6ff;
+    color: #0969da;
+    background: #ffffff;
     text-decoration: none;
     transition: 0.2s;
 }
 
 .socials a:hover {
-    background: #21262d;
-    border-color: #58a6ff;
+    background: #f6f8fa;
+    border-color: #0969da;
 }
 
 .profile-counter {
@@ -87,16 +95,18 @@ body {
 }
 
 
-/* BANNER */
+/* =========================================
+   BANNER
+========================================= */
 
-.banner {
+.banner-section {
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
-    border: 1px solid #30363d;
+    border: 1px solid #d0d7de;
 }
 
-.banner img {
+.banner-image {
     display: block;
     width: 100%;
     height: 300px;
@@ -104,25 +114,28 @@ body {
 }
 
 
-/* SECTIONS */
+/* =========================================
+   SECTIONS
+========================================= */
 
 section {
     padding: 45px 5px;
-    border-bottom: 1px solid #21262d;
+    border-bottom: 1px solid #eaeef2;
 }
 
 h2 {
-    color: #f0f6fc;
+    color: #24292f;
     font-size: 1.7rem;
     margin-bottom: 25px;
 }
 
 h3 {
     margin-top: 0;
+    color: #24292f;
 }
 
 p {
-    color: #c9d1d9;
+    color: #57606a;
 }
 
 .content {
@@ -132,11 +145,13 @@ p {
 .lead {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #f0f6fc;
+    color: #24292f;
 }
 
 
-/* EXPLORING */
+/* =========================================
+   EXPLORING
+========================================= */
 
 .exploring {
     padding-left: 25px;
@@ -144,10 +159,13 @@ p {
 
 .exploring li {
     margin: 10px 0;
+    color: #57606a;
 }
 
 
-/* PROJECTS */
+/* =========================================
+   PROJECTS
+========================================= */
 
 .projects {
     display: grid;
@@ -156,15 +174,26 @@ p {
 
 .project {
     padding: 22px;
-    background: #161b22;
-    border: 1px solid #30363d;
+    background: #ffffff;
+    border: 1px solid #d8dee4;
     border-radius: 8px;
-    transition: transform 0.2s, border-color 0.2s;
+
+    box-shadow:
+        0 1px 3px rgba(27, 31, 36, 0.08);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .project:hover {
     transform: translateY(-3px);
-    border-color: #58a6ff;
+
+    border-color: #0969da;
+
+    box-shadow:
+        0 4px 12px rgba(27, 31, 36, 0.12);
 }
 
 .project h3 {
@@ -174,7 +203,7 @@ p {
 .project a,
 .articles a,
 .links a {
-    color: #58a6ff;
+    color: #0969da;
     text-decoration: none;
 }
 
@@ -185,7 +214,9 @@ p {
 }
 
 
-/* SKILLS */
+/* =========================================
+   SKILLS
+========================================= */
 
 .skills {
     display: flex;
@@ -194,15 +225,26 @@ p {
 }
 
 .skills span {
-    background: #161b22;
-    border: 1px solid #30363d;
-    border-radius: 6px;
-    padding: 8px 14px;
+    background: #ffffff;
+
+    border: 1px solid #d8dee4;
+
+    border-radius: 20px;
+
+    padding: 7px 14px;
+
     font-size: 0.9rem;
+
+    color: #24292f;
+
+    box-shadow:
+        0 1px 2px rgba(27, 31, 36, 0.05);
 }
 
 
-/* GITHUB */
+/* =========================================
+   GITHUB
+========================================= */
 
 .github-stats {
     text-align: center;
@@ -211,11 +253,14 @@ p {
 
 .github-stats img {
     max-width: 100%;
+    height: auto;
     border-radius: 8px;
 }
 
 
-/* ARTICLES */
+/* =========================================
+   ARTICLES
+========================================= */
 
 .articles {
     display: grid;
@@ -224,9 +269,15 @@ p {
 
 .articles article {
     padding: 20px;
-    background: #161b22;
-    border: 1px solid #30363d;
+
+    background: #ffffff;
+
+    border: 1px solid #d8dee4;
+
     border-radius: 8px;
+
+    box-shadow:
+        0 1px 3px rgba(27, 31, 36, 0.08);
 }
 
 .articles h3 {
@@ -235,12 +286,14 @@ p {
 }
 
 .platform {
-    color: #8b949e;
+    color: #6e7781;
     font-size: 0.9rem;
 }
 
 
-/* CONTACT */
+/* =========================================
+   CONTACT
+========================================= */
 
 .links {
     display: flex;
@@ -253,7 +306,9 @@ p {
 }
 
 
-/* FOOTER */
+/* =========================================
+   FOOTER
+========================================= */
 
 footer {
     text-align: center;
@@ -261,12 +316,14 @@ footer {
 }
 
 .footer-small {
-    color: #6e7681;
+    color: #6e7781;
     font-size: 0.85rem;
 }
 
 
-/* MOBILE */
+/* =========================================
+   MOBILE
+========================================= */
 
 @media (max-width: 600px) {
 
@@ -282,7 +339,7 @@ footer {
         font-size: 1.8rem;
     }
 
-    .banner img {
+    .banner-image {
         height: 180px;
     }
 
@@ -294,4 +351,4 @@ footer {
         padding: 18px;
     }
 
-}
+    }
