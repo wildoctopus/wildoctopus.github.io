@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Alok Pandey | WildOctopus — Technology Lead & AI SME</title>
 
     <meta name="description"
-          content="Alok Pandey, known as WildOctopus — Technology Lead and AI SME exploring Java, Spring Boot, distributed systems, Generative AI, Deep Learning, Computer Vision and open-source projects.">
+          content="Alok Pandey, known online as WildOctopus — Technology Lead and AI SME exploring Java, Spring Boot, distributed systems, Generative AI, Deep Learning, Computer Vision and open-source projects.">
 
     <meta name="keywords"
           content="Alok Pandey, WildOctopus, wildoctopus, Technology Lead, AI SME, Java, Spring Boot, Microservices, Distributed Systems, Generative AI, Deep Learning, Computer Vision, PyTorch, OpenCV">
@@ -20,14 +19,11 @@
     <link rel="canonical"
           href="https://wildoctopus.github.io/">
 
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Open Graph -->
     <meta property="og:title"
           content="Alok Pandey | WildOctopus">
 
     <meta property="og:description"
-          content="Technology Lead & AI SME exploring Java, distributed systems, Deep Learning, Computer Vision and Generative AI.">
+          content="Technology Lead & AI SME exploring Java, Distributed Systems, Deep Learning, Computer Vision and Generative AI.">
 
     <meta property="og:url"
           content="https://wildoctopus.github.io/">
@@ -36,9 +32,8 @@
           content="website">
 
     <meta property="og:image"
-          content="https://wildoctopus.github.io/assets/1539905212167.jpeg">
+          content="https://raw.githubusercontent.com/wildoctopus/wildoctopus/main/1539905212167.jpeg">
 
-    <!-- Twitter -->
     <meta name="twitter:card"
           content="summary_large_image">
 
@@ -49,9 +44,9 @@
           content="Technology Lead & AI SME exploring Java, Distributed Systems, Deep Learning and Generative AI.">
 
     <meta name="twitter:image"
-          content="https://wildoctopus.github.io/assets/1539905212167.jpeg">
+          content="https://raw.githubusercontent.com/wildoctopus/wildoctopus/main/1539905212167.jpeg">
 
-    <!-- Google structured data -->
+    <!-- Structured data for Google -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -81,26 +76,316 @@
     }
     </script>
 
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #0d1117;
+            color: #c9d1d9;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: min(1000px, calc(100% - 32px));
+            margin: auto;
+        }
+
+        /* HEADER */
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px 35px;
+        }
+
+        .octopus {
+            width: 200px;
+            max-width: 70%;
+        }
+
+        .hi {
+            width: 30px;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        .hero h1 {
+            margin: 20px 0 8px;
+            color: #f0f6fc;
+            font-size: 2.2rem;
+        }
+
+        .subtitle {
+            font-size: 1.05rem;
+            color: #8b949e;
+        }
+
+        .subtitle strong {
+            color: #f0f6fc;
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 25px 0;
+        }
+
+        .socials a {
+            padding: 8px 18px;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            color: #58a6ff;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+
+        .socials a:hover {
+            background: #21262d;
+            border-color: #58a6ff;
+        }
+
+        .profile-counter {
+            margin-top: 5px;
+        }
+
+        /* BANNER */
+
+        .banner {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 1px solid #30363d;
+        }
+
+        .banner img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 45px 5px;
+            border-bottom: 1px solid #21262d;
+        }
+
+        h2 {
+            color: #f0f6fc;
+            font-size: 1.7rem;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        p {
+            color: #c9d1d9;
+        }
+
+        .content {
+            max-width: 800px;
+        }
+
+        .lead {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #f0f6fc;
+        }
+
+        /* EXPLORING */
+
+        .exploring {
+            padding-left: 25px;
+        }
+
+        .exploring li {
+            margin: 10px 0;
+        }
+
+        /* PROJECTS */
+
+        .projects {
+            display: grid;
+            gap: 18px;
+        }
+
+        .project {
+            padding: 22px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .project:hover {
+            transform: translateY(-3px);
+            border-color: #58a6ff;
+        }
+
+        .project h3 {
+            margin-bottom: 8px;
+        }
+
+        .project a,
+        .articles a,
+        .links a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        .project a:hover,
+        .articles a:hover,
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            padding: 8px 14px;
+            font-size: 0.9rem;
+        }
+
+        /* GITHUB */
+
+        .github-stats {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .github-stats img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* ARTICLES */
+
+        .articles {
+            display: grid;
+            gap: 16px;
+        }
+
+        .articles article {
+            padding: 20px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+        }
+
+        .articles h3 {
+            font-size: 1.05rem;
+            margin-bottom: 8px;
+        }
+
+        .platform {
+            color: #8b949e;
+            font-size: 0.9rem;
+        }
+
+        /* CONTACT */
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .links a {
+            font-weight: 600;
+        }
+
+        /* FOOTER */
+
+        footer {
+            text-align: center;
+            padding: 45px 10px;
+        }
+
+        .footer-small {
+            color: #6e7681;
+            font-size: 0.85rem;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: min(100% - 22px, 1000px);
+            }
+
+            .hero {
+                padding-top: 35px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .banner img {
+                height: 180px;
+            }
+
+            h2 {
+                font-size: 1.45rem;
+            }
+
+            .project {
+                padding: 18px;
+            }
+        }
+
+    </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- HEADER -->
+    <!-- ================= HEADER ================= -->
 
     <header class="hero">
 
         <img
-            src="assets/wildoctopus.gif"
             class="octopus"
+            src="https://raw.githubusercontent.com/wildoctopus/wildoctopus/main/wildoctopus.gif"
             alt="WildOctopus">
 
         <h1>
             hey there
             <img
-                src="assets/hi.gif"
                 class="hi"
+                src="https://raw.githubusercontent.com/wildoctopus/wildoctopus/main/hi.gif"
                 alt="Hi">
         </h1>
 
@@ -145,18 +430,18 @@
     </header>
 
 
-    <!-- BANNER -->
+    <!-- ================= BANNER ================= -->
 
     <section class="banner">
 
         <img
-            src="assets/1539905212167.jpeg"
-            alt="Alok Pandey - WildOctopus">
+            src="https://raw.githubusercontent.com/wildoctopus/wildoctopus/main/1539905212167.jpeg"
+            alt="Alok Pandey WildOctopus">
 
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- ================= ABOUT ================= -->
 
     <section>
 
@@ -202,7 +487,7 @@
     </section>
 
 
-    <!-- CURRENTLY EXPLORING -->
+    <!-- ================= EXPLORING ================= -->
 
     <section>
 
@@ -227,7 +512,7 @@
     </section>
 
 
-    <!-- PROJECTS -->
+    <!-- ================= PROJECTS ================= -->
 
     <section>
 
@@ -239,10 +524,13 @@
 
                 <h3>
                     🧠
-                    <a href="https://github.com/wildoctopus/huggingface-cloth-segmentation"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                    <a
+                        href="https://github.com/wildoctopus/huggingface-cloth-segmentation"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
                         Hugging Face Cloth Segmentation
+
                     </a>
                 </h3>
 
@@ -258,10 +546,13 @@
 
                 <h3>
                     👟
-                    <a href="https://github.com/wildoctopus/FeetAndShoeMeasurement"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                    <a
+                        href="https://github.com/wildoctopus/FeetAndShoeMeasurement"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
                         Feet & Shoe Measurement
+
                     </a>
                 </h3>
 
@@ -277,10 +568,13 @@
 
                 <h3>
                     🎥
-                    <a href="https://github.com/wildoctopus/Anime-Video-Generator"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                    <a
+                        href="https://github.com/wildoctopus/Anime-Video-Generator"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
                         Anime Video Generator
+
                     </a>
                 </h3>
 
@@ -296,7 +590,7 @@
     </section>
 
 
-    <!-- TECHNOLOGY -->
+    <!-- ================= TECHNOLOGIES ================= -->
 
     <section>
 
@@ -305,22 +599,33 @@
         <div class="skills">
 
             <span>☕ Java</span>
+
             <span>🌱 Spring Boot</span>
-            <span>📨 Kafka</span>
+
+            <span>📨 Apache Kafka</span>
 
             <span>🐍 Python</span>
+
             <span>🔥 PyTorch</span>
+
             <span>👁️ OpenCV</span>
+
             <span>🔢 NumPy</span>
+
             <span>🐼 Pandas</span>
+
             <span>📓 Jupyter</span>
 
             <span>🐘 PostgreSQL</span>
+
             <span>🍃 MongoDB</span>
 
             <span>🔧 Jenkins</span>
+
             <span>🐳 Docker</span>
+
             <span>☁️ AWS</span>
+
             <span>🔀 Git</span>
 
         </div>
@@ -328,7 +633,7 @@
     </section>
 
 
-    <!-- GITHUB -->
+    <!-- ================= GITHUB ================= -->
 
     <section>
 
@@ -345,7 +650,7 @@
     </section>
 
 
-    <!-- ARTICLES -->
+    <!-- ================= ARTICLES ================= -->
 
     <section>
 
@@ -356,16 +661,22 @@
             <article>
 
                 <h3>
+
                     📝
                     <a
                         href="https://wildoctopus.medium.com/i-was-tired-of-reading-50-research-papers-to-answer-one-ai-question-5dbf934ac069"
                         target="_blank"
                         rel="noopener noreferrer">
+
                         I Was Tired of Reading 50 Research Papers to Answer One AI Question
+
                     </a>
+
                 </h3>
 
-                <span class="platform">Medium</span>
+                <span class="platform">
+                    Medium
+                </span>
 
             </article>
 
@@ -379,12 +690,16 @@
                         href="https://dev.to/wildoctopus/deep-learning-training-playbook-turning-research-papers-into-engineering-decisions-3k9d"
                         target="_blank"
                         rel="noopener noreferrer">
+
                         Deep Learning Training Playbook: Turning Research Papers into Engineering Decisions
+
                     </a>
 
                 </h3>
 
-                <span class="platform">Dev.to</span>
+                <span class="platform">
+                    Dev.to
+                </span>
 
             </article>
 
@@ -398,12 +713,16 @@
                         href="https://medium.com/analytics-vidhya/linear-regression-from-eda-to-model-optimization-part-1-2b7b3138373f"
                         target="_blank"
                         rel="noopener noreferrer">
+
                         Linear Regression — From EDA to Model Optimization (Part 1)
+
                     </a>
 
                 </h3>
 
-                <span class="platform">Medium</span>
+                <span class="platform">
+                    Medium
+                </span>
 
             </article>
 
@@ -412,7 +731,7 @@
     </section>
 
 
-    <!-- CONTACT -->
+    <!-- ================= CONTACT ================= -->
 
     <section>
 
@@ -432,34 +751,48 @@
 
         <div class="links">
 
-            <a href="https://www.linkedin.com/in/alok-pandey/"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://www.linkedin.com/in/alok-pandey/"
+                target="_blank"
+                rel="noopener noreferrer">
+
                 💼 LinkedIn
+
             </a>
 
-            <a href="https://dev.to/wildoctopus"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://dev.to/wildoctopus"
+                target="_blank"
+                rel="noopener noreferrer">
+
                 ✍️ Dev.to
+
             </a>
 
-            <a href="https://wildoctopus.medium.com"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://wildoctopus.medium.com"
+                target="_blank"
+                rel="noopener noreferrer">
+
                 📚 Medium
+
             </a>
 
-            <a href="https://github.com/wildoctopus"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a
+                href="https://github.com/wildoctopus"
+                target="_blank"
+                rel="noopener noreferrer">
+
                 🐙 GitHub
+
             </a>
 
         </div>
 
     </section>
 
+
+    <!-- ================= FOOTER ================= -->
 
     <footer>
 
@@ -476,4 +809,5 @@
 </div>
 
 </body>
-</html>
+
+            </html>
